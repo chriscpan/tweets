@@ -1,0 +1,14 @@
+<header>
+  See what's happening right now.
+  <span> Find community, conversation and inspiratin about the things you love. </span>
+</header>
+
+<div id="content">
+  <ul>
+    <% @trends.each do |tweet| %>
+      <li>
+        <%= tweet.name %>
+      </li>
+    <% end %>
+  </ul>
+</div>
